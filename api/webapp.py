@@ -51,4 +51,4 @@ if __name__ == "__main__":
 
     model = YOLO('best.pt')  # force_reload = recache latest code
     
-    app.run(host="0.0.0.0", port=args.port)  # debug=True causes Restarting with stat
+    app.run(debug=True, host="0.0.0.0", port=args.port)  # debug=True causes Restarting with stat
